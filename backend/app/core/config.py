@@ -1,6 +1,12 @@
+"""Configuration settings for the application."""
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+
 class Settings(BaseSettings):
+    """Configuration settings for the application.
+    This class uses Pydantic to manage application settings, including database
+    connection details and environment variables.
+    """
     model_config = SettingsConfigDict(env_file='.env',env_file_encoding='utf-8', extra='ignore')
 
     DB_URL: str = ""
