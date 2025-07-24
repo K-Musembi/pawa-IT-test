@@ -15,4 +15,6 @@ class UserRead(SQLMOdel):
 
 class UserUpdate(SQLModel):
     """UserUpdate schema for updating user information."""
-    pass
+    username: str | None = None
+    email: str | None = None
+    password: str | None = None
