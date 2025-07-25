@@ -1,13 +1,13 @@
 """User schemas for creating and reading users.""""
-from sqlmodel import SQLMOdel
+from sqlmodel import SQLModel
 
-class UserCreate(SQLMOdel):
+class UserCreate(SQLModel):
     """UserCreate schema for creating a new user."""
     username: str
-    email: str
+    email: str | None = None
     password: str
 
-class UserRead(SQLMOdel):
+class UserRead(SQLModel):
     """UserRead schema for reading user information."""
     id: int
     username: str
