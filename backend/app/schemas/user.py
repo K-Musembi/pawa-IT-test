@@ -1,4 +1,4 @@
-"""User schemas for creating and reading users.""""
+"""User schemas for creating and reading users."""
 from sqlmodel import SQLModel
 
 class UserCreate(SQLModel):

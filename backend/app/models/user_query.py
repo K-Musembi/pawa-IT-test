@@ -1,9 +1,9 @@
-"""UserQuery class model with SQLModel ORM.""""
-from SQLModel import SQLMOdel, Field, Relationship
+"""UserQuery class model with SQLModel ORM."""
+from sqlmodel import SQLModel, Field, Relationship
 from typing import Optional
 from datetime import datetime
 
-class UserQuery(SQLMOdel, table=True):
+class UserQuery(SQLModel, table=True):
     """UserQuery class model with SQLModel ORM
     Represents a user's query and response in the system.
     """

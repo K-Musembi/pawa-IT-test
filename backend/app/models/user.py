@@ -1,4 +1,4 @@
-"""User class model with SQLModel ORM.""""
+"""User class model with SQLModel ORM."""
 from sqlmodel import SQLModel, Field, Relationship
 from typing import Optional, List
 

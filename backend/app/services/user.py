@@ -3,7 +3,7 @@ from passlib.context import CryptContext
 from app.models.user import User
 from app.schemas.user import UserCreate, UserUpdate
 
-pw_context = CryptContext(scheme=["bcrypt"], deprecated="auto")
+pw_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def get_hashed_password(password: str) -> str:
     """Hash a password using bcrypt."""
